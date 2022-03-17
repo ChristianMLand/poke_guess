@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #414141;
+}
+body{
+    padding: 20px;
+}
+.wrapper{
+    border-radius: 10px;
+    padding: 50px;
+    width: 800px;
+    min-height: 600px;
+    margin: auto;
+    /* background: #5cb6c4; */
+    background: linear-gradient(#df8388, #ffd3b6);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper h1{
+    font-size: 42px;
+}
+.title{
+    color: white;
+}
+.poke-wrapper{
+    padding: 50px;
+}
+.poke{
+    min-height: 350px;
+    background: linear-gradient(#141414, #2d2d2de7)
+}
+.guess-wrapper{
+    display: flex;
+    justify-content: center;
+}
+input[type="number"]{
+    margin: 10px;
+    width: 55px;
+}
+.guess-wrapper input{
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 3px #870d362f;
+}
+.guess-wrapper input:focus{
+    outline:none;
+}
+button{
+    width: 120px;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 5px 5px;
+    border: none;
+    background-color: #00000000;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    box-shadow: 0px 0px 0px 3px white;
+}
+button:focus{
+    outline:none;
+}
+.guess-wrapper button:active{
+    background-color: #870d362f;
+}
+.dex-wrapper{
+    margin-left: 30px;
+    background-color: white;
+    vertical-align: center;
+    min-height: 550px;;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0px 0px 0px 3px #870d362f;
+}
+.result h1{
+    margin-top: 30px;
+    border-radius: 5px;
+    font-size: 34px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.dex-wrapper button{
+    background-color: #fbe3bf;
+    border: none;
+}
+.dex-wrapper button:active{
+    background-color: #eca270;
+}
+.dex-entry{
+    background: #f1f1f1;
+    color: #838e8e;
+    padding: 5px;
+    border-radius: 5px;
+    min-height: 150px;
+    line-height: 2;
+    font-size: 18px;
+    font-style: italic;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.score{
+    color: #fbe3bf;
+}
+/* wobble animation */
+.shake{
+    animation: wobble 0.8s;
+}
+@keyframes wobble {
+    0% {transform: none}
+    15% {transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg)}
+    30% {transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg)}
+    45% {transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg)}
+    60% {transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg)}
+    75% {transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)}
+    100% {transform: none}
+}
+.top-contain{
+    display: flex;
+    justify-content: center;
+    min-width: 400px;
+    position: relative;
+}
+
+.base-timer {
+    left: 120%;
+    position: absolute;
+    height: 75px;
+    width: 75px;
+}
+
+.base-timer-svg {
+    transform: scaleX(-1);
+}
+
+.base-timer-label {
+    color: white;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.base-timer-path-remaining {
+    stroke-width: 10px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    stroke: white;
+}

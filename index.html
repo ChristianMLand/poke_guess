@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        <div class="top-contain">
+          <h1 class="title">Who's that Pokemon?</h1>
+          <div id="timer"></div>
+        </div>
+        <h2 class="score">0 streak!</h2>
+        <div class="poke-wrapper"></div>
+        <div class="guess-wrapper">
+          <div class="range-wrapper">
+            <label for="input-min">Min</label>
+            <input name="input-min" id="input-min" type="number" min="1" max="807"/>
+            <label for="input-max">Max</label>
+            <input name="input-max" id="input-max" type="number" min="1" max="807"/>
+          </div>
+          <input
+            class="guess-input"
+            type="text"
+            spellcheck="false"
+            placeholder="Type Here"
+          />
+          <button class="guess-btn">Guess!</button>
+        </div>
+      </div>
+      <div class="dex-wrapper">
+        <div class="result"><h1>? ? ?</h1></div>
+        <p class="dex-entry"></p>
+        <button class="new-entry-btn">New Entry</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
