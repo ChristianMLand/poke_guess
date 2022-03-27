@@ -7,7 +7,6 @@ This is a Pokemon guessing game developed with HTML, CSS, and JavaScript as an e
 Pokemon Data and images from PokeAPI: https://pokeapi.co/
 
 ## The Start Screen
-----------------------
 - Min and max inputs are used to determine the range of Pokemon that will be selected from
 - Default range is 1-151 if no values are provided
 - Clicking "Play!" will start the game
@@ -15,7 +14,6 @@ Pokemon Data and images from PokeAPI: https://pokeapi.co/
 ![Pick Range](img/wtpg3.png?raw=true "Pick game range")
 
 ## The Game Screen
-------------------
 - The timer starts counting down from 20
 - Your goal is to guess the correct name in the text input provided
 - You get three attempts to guess correctly
@@ -24,7 +22,6 @@ Pokemon Data and images from PokeAPI: https://pokeapi.co/
 ![Silhouette](img/wtpg.png?raw=true "Poke Silhouette")
 
 ## The End Screen
------------------
 - Reveals the selected Pokemon's image and name
 - Increments your streak if you guessed correct, or resets it if you didn't
 - Clicking "New Entry" will cycle through different Pokedex entries to give you more information on the Pokemon
